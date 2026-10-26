@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoShowroom - Tugas Akhir</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="icon.png" alt="Logo AutoShowroom" class="logo-img">
+            <span>AutoShowroom</span>
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#featured">Beli Mobil</a></li>
+            <li><a href="#footer">Kontak</a></li>
+        </ul>
+
+        <div class="nav-buttons" id="nav-buttons">
+            <a href="#" class="btn-login">Masuk</a>
+            <a href="#" class="btn-signup">Daftar</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Temukan Mobil Impianmu</h1>
+            <p>Cari, bandingkan, dan pilih mobil dengan percaya diri</p>
+        </div>
+
+        <div class="search-box" role="search">
+            <input type="search" id="filter-nama" placeholder="Cari nama mobil..." aria-label="Cari nama mobil">
+            <select id="filter-brand" aria-label="Filter brand"></select>
+            <select id="filter-transmisi" aria-label="Filter transmisi"></select>
+            <select id="filter-bahan-bakar" aria-label="Filter bahan bakar"></select>
+            <select id="sort-harga" aria-label="Urutkan harga">
+                <option value="">Urutkan</option>
+                <option value="asc">Harga: Termurah</option>
+                <option value="desc">Harga: Termahal</option>
+            </select>
+            <button id="btn-search-action" class="btn-search">Cari</button>
+            <button id="btn-reset" class="btn-reset" type="button">Reset</button>
+        </div>
+    </header>
+
+    <section id="featured" class="featured-section">
+        <div class="section-head">
+            <h2>Daftar Mobil</h2>
+            <p id="result-count" class="result-count" aria-live="polite"></p>
+        </div>
+        <div id="car-container" class="car-grid">
+            <p class="grid-message">Memuat data mobil...</p>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer-section">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>AutoShowroom</h3>
+                <p>Platform terpercaya untuk menemukan mobil impianmu dengan harga terbaik, kualitas terjamin, dan transaksi yang aman.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#featured">Cari Mobil</a></li>
+                    <li><a href="#footer">Syarat &amp; Ketentuan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Hubungi Kami</h3>
+                <p>Email: info@autoshowroom.com</p>
+                <p>Telp: 0812-3456-7890</p>
+                <p>Lokasi: Semarang, Indonesia</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tugas Akhir Frontend BTNG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
